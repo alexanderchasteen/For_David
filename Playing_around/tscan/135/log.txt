@@ -1,0 +1,48 @@
+data: /Users/adc6103/Desktop/Lattice_QCD/Code/DoS/Playing_around/raw/135  (87 c values from -0.26 to 1)
+fit variants: range, degree offset, degrees, AIC - AIC_min, weight
+       [-0.26, 1] -1  dlogrho:6 B2:8 B4:8 B6:6 B8:5  AIC =   22.23  w = 0.000
+       [-0.26, 1] +0  dlogrho:7 B2:9 B4:9 B6:7 B8:6  AIC =    0.00  w = 0.974
+       [-0.26, 1] +1  dlogrho:8 B2:10 B4:10 B6:8 B8:7  AIC =    7.27  w = 0.026
+       [-0.26, 1] +2  dlogrho:9 B2:11 B4:11 B6:9 B8:8  AIC =   15.52  w = 0.000
+       [-0.26, 1] +3  dlogrho:10 B2:12 B4:12 B6:10 B8:9  AIC =   22.84  w = 0.000
+     [-0.2, 0.94] -1  dlogrho:4 B2:6 B4:7 B6:5 B8:4  AIC =  104.51  w = 0.000
+     [-0.2, 0.94] +0  dlogrho:5 B2:7 B4:8 B6:6 B8:5  AIC =   38.36  w = 0.000
+     [-0.2, 0.94] +1  dlogrho:6 B2:8 B4:9 B6:7 B8:6  AIC =   45.19  w = 0.000
+     [-0.2, 0.94] +2  dlogrho:7 B2:9 B4:10 B6:8 B8:7  AIC =   49.04  w = 0.000
+     [-0.2, 0.94] +3  dlogrho:8 B2:10 B4:11 B6:9 B8:8  AIC =   53.96  w = 0.000
+zero search on the central fit of variant [-0.26, 1] +0 (weight 0.974)
+N_max = 8: 22252 grid cells with non-zero winding number, 1272 distinct zeros after Newton refinement
+N_max = 6: 2639 grid cells with non-zero winding number, 531 distinct zeros after Newton refinement
+
+N_max = 8: 1272 zeros in the box, 10 candidates checked (115 more candidates further from the real axis left unchecked), 1147 artifacts (|mu| from 4.38 to 11.14; failed checks: edge 605, N_max-dependence 666, isolation 1147)
+  candidates (mu = mu_B/T; central +- stat +- sys; T = 135 MeV for the MeV values)
+     Re mu                      Im mu                      |mu|   mu_B [MeV]       d_other  isol   edge     d_grid   wind  weight  outliers  stable
+     4.185 +- 0.074 +- 0.004    2.279 +- 0.167 +- 0.005   4.766  ( 565 +  308i)    0.571   0.20  4.8e-09  2.1e-05    1   1.000    0/336   yes
+     7.113 +- 0.459 +- 0.011    1.212 +- 0.130 +- 0.004   7.215  ( 960 +  164i)    0.509   0.20  9.9e-41  4.7e-06    1   1.000    6/336   yes
+     6.033 +- 0.116 +- 0.011    4.122 +- 0.185 +- 0.012   7.307  ( 815 +  556i)    0.439   0.18  4.6e-48  4.2e-04    1   1.000    0/480   yes
+     7.198 +- 0.353 +- 0.010    1.235 +- 0.122 +- 0.004   7.303  ( 972 +  167i)    0.459   0.23  2.8e-40  4.4e-06    1   1.000    8/336   yes
+     4.240 +- 0.203 +- 0.001    5.985 +- 0.204 +- 0.007   7.334  ( 572 +  808i)    0.528   0.16  9.1e-70  1.8e-01    1   1.000   34/384   no
+     6.077 +- 0.155 +- 0.011    4.170 +- 0.167 +- 0.012   7.370  ( 820 +  563i)    0.375   0.20  1.2e-47  2.5e-04    1   1.000   10/480   yes
+     7.277 +- 0.400 +- 0.008    1.257 +- 0.121 +- 0.004   7.384  ( 982 +  170i)    0.395   0.22  7.2e-40  4.1e-06    1   1.000   10/336   yes
+     6.119 +- 0.141 +- 0.004    4.214 +- 0.143 +- 0.005   7.430  ( 826 +  569i)    0.316   0.21  3.0e-47  1.6e-04    1   1.000    0/432   yes
+     7.349 +- 0.353 +- 0.007    1.277 +- 0.110 +- 0.003   7.460  ( 992 +  172i)    0.330   0.22  1.7e-39  3.8e-06    1   1.000   12/384   yes
+     6.160 +- 0.198 +- 0.003    4.255 +- 0.195 +- 0.002   7.487  ( 832 +  574i)    0.260   0.21  7.2e-47  1.2e-04    1   1.000    1/432   yes
+  smallest Im mu among stable zeros with |mu| <= 1.5 min|mu| (LY-zero candidate):
+     mu_B/T = (4.185 +- 0.074) + (2.279 +- 0.167) i,  |mu_B/T| = 4.766,  mu_B = (565 + 308 i) MeV
+  smallest |mu| (radius of convergence of the Taylor series):
+     mu_B/T = (4.185 +- 0.074) + (2.279 +- 0.167) i,  |mu_B/T| = 4.766,  mu_B = (565 + 308 i) MeV
+
+N_max = 6: 531 zeros in the box, 10 candidates checked (73 more candidates further from the real axis left unchecked), 448 artifacts (|mu| from 5.73 to 12.60; failed checks: edge 277, N_max-dependence 327, isolation 448)
+  candidates (mu = mu_B/T; central +- stat +- sys; T = 135 MeV for the MeV values)
+     Re mu                      Im mu                      |mu|   mu_B [MeV]       d_other  isol   edge     d_grid   wind  weight  outliers  stable
+     4.661 +- 0.166 +- 0.000    2.595 +- 0.244 +- 0.000   5.334  ( 629 +  350i)    0.037   2.51  1.8e-19  1.6e-05    1   0.974   12/48    no
+     6.252                      4.499                     7.702   -- no fit variant reproduces this zero (d_other 0.113, edge 1.5e-31, winding 1)
+     7.571 +- 0.136 +- 0.003    1.522 +- 0.106 +- 0.002   7.722  (1022 +  205i)    0.010   0.40  2.0e-24  9.1e-06    1   0.974   81/288   no
+     6.307 +- 0.244 +- 0.000    4.570 +- 0.212 +- 0.000   7.789  ( 851 +  617i)    0.128   0.97  2.0e-32  1.1e-05    1   0.974   14/48    no
+     6.411 +- 0.239 +- 0.000    4.707 +- 0.178 +- 0.000   7.953  ( 865 +  635i)    0.165   0.84  3.5e-34  1.0e-05    1   0.974    9/48    no
+     7.827 +- 0.115 +- 0.002    1.556 +- 0.092 +- 0.001   7.980  (1057 +  210i)    0.018   0.26  6.7e-20  8.0e-06    1   0.974   62/288   no
+     6.460                      4.772                     8.031   -- no fit variant reproduces this zero (d_other 0.184, edge 4.7e-35, winding 1)
+     6.508 +- 0.241 +- 0.000    4.836 +- 0.173 +- 0.000   8.108  ( 879 +  653i)    0.203   0.74  6.5e-36  9.3e-06    1   0.974   19/96    no
+     6.554 +- 0.267 +- 0.000    4.897 +- 0.230 +- 0.000   8.181  ( 885 +  661i)    0.223   0.70  8.9e-37  9.1e-06    1   0.974   22/96    no
+     8.027 +- 0.092 +- 0.006    1.588 +- 0.079 +- 0.012   8.183  (1084 +  214i)    0.024   0.16  1.3e-15  7.2e-06    1   1.000   78/336   no
+  no stable zero in the search box

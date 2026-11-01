@@ -1,0 +1,24 @@
+data: /Users/adc6103/Desktop/Lattice_QCD/Code/DoS/Playing_around/raw/140  (78 c values from -0.26 to 1)
+fit variants: range, degree offset, degrees, AIC - AIC_min, weight
+       [-0.26, 1] -1  dlogrho:7 B2:7 B4:8 B6:8 B8:5  AIC =   28.95  w = 0.000
+       [-0.26, 1] +0  dlogrho:8 B2:8 B4:9 B6:9 B8:6  AIC =    0.00  w = 0.972
+       [-0.26, 1] +1  dlogrho:9 B2:9 B4:10 B6:10 B8:7  AIC =    7.19  w = 0.027
+       [-0.26, 1] +2  dlogrho:10 B2:10 B4:11 B6:11 B8:8  AIC =   12.94  w = 0.002
+       [-0.26, 1] +3  dlogrho:11 B2:11 B4:12 B6:12 B8:9  AIC =   20.51  w = 0.000
+     [-0.2, 0.94] -1  dlogrho:8 B2:6 B4:6 B6:6 B8:3  AIC =   52.08  w = 0.000
+     [-0.2, 0.94] +0  dlogrho:9 B2:7 B4:7 B6:7 B8:4  AIC =   24.83  w = 0.000
+     [-0.2, 0.94] +1  dlogrho:10 B2:8 B4:8 B6:8 B8:5  AIC =   32.63  w = 0.000
+     [-0.2, 0.94] +2  dlogrho:11 B2:9 B4:9 B6:9 B8:6  AIC =   33.50  w = 0.000
+     [-0.2, 0.94] +3  dlogrho:12 B2:10 B4:10 B6:10 B8:7  AIC =   42.16  w = 0.000
+scheme: fugacity; zero search on the central fit of variant [-0.26, 1] +0 (weight 0.972)
+2 sectors (matched at N_max = 8): 18061 grid cells with non-zero winding number (only the 2500 closest to the origin refined), 50 distinct zeros after Newton refinement
+1 sector (matched at N_max = 8): 1535 grid cells with non-zero winding number, 11 distinct zeros after Newton refinement
+
+2 sectors (matched at N_max = 8): 50 zeros in the box, 1 candidates checked, 49 artifacts (|mu| from 3.04 to 4.54; failed checks: edge 22, N_max-dependence 37, isolation 49)
+  candidates (mu = mu_B/T; central +- stat +- sys; T = 140 MeV for the MeV values)
+     Re mu                      Im mu                      |mu|   mu_B [MeV]       d_other  isol   edge     d_grid   wind  weight  outliers  stable
+     3.331 +- 0.012 +- 0.000    1.656 +- 0.007 +- 0.000   3.720  ( 466 +  232i)    0.550   0.22  1.5e-07  5.4e-07    1   0.972   31/48    no
+  no stable zero in the search box
+
+1 sector (matched at N_max = 8): 11 zeros in the box, 0 candidates checked, 11 artifacts (|mu| from 4.17 to 6.01; failed checks: edge 8, N_max-dependence 7, isolation 11)
+  no stable zero in the search box

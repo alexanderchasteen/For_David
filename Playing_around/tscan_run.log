@@ -1,0 +1,68 @@
+data sets:
+  T = 100:   4 c values -> skipped (too few points)
+  T = 105:   4 c values -> skipped (too few points)
+  T = 110:  72 c values in [-0.01, 0.94], rho_0 at the edges 5.8e-01, peak at 0.03 of the range -> skipped (range does not cover rho_0)
+  T = 115:  69 c values in [-0.025, 0.94], rho_0 at the edges 3.3e-01, peak at 0.05 of the range -> skipped (range does not cover rho_0)
+  T = 120: 100 c values in [-0.26, 1], rho_0 at the edges 7.2e-16, peak at 0.23 of the range -> run
+  T = 125:  81 c values in [-0.26, 1], rho_0 at the edges 1.3e-14, peak at 0.24 of the range -> run
+  T = 130:  89 c values in [-0.28, 1], rho_0 at the edges 1.1e-15, peak at 0.26 of the range -> run
+  T = 135:  87 c values in [-0.26, 1], rho_0 at the edges 9.6e-13, peak at 0.25 of the range -> run
+  T = 140:  78 c values in [-0.26, 1], rho_0 at the edges 4.6e-12, peak at 0.27 of the range -> run
+  T = 145:  72 c values in [-0.26, 1], rho_0 at the edges 1.6e-11, peak at 0.28 of the range -> run
+  T = 150:  72 c values in [-0.26, 1], rho_0 at the edges 4.0e-11, peak at 0.29 of the range -> run
+  T = 155:  72 c values in [-0.26, 1], rho_0 at the edges 8.2e-11, peak at 0.31 of the range -> run
+  T = 160:  74 c values in [-0.26, 1], rho_0 at the edges 1.2e-10, peak at 0.33 of the range -> run
+  T = 165:   9 c values -> skipped (too few points)
+  T = 170:   7 c values -> skipped (too few points)
+  T = 175:  10 c values -> skipped (too few points)
+  T = 180: 108 c values in [-0.3, 0.8], rho_0 at the edges 7.8e-08, peak at 0.55 of the range -> run
+  T = 185:   6 c values -> skipped (too few points)
+  T = 190:  28 c values in [0.22, 0.49], rho_0 at the edges 1.9e-02, peak at 0.59 of the range -> skipped (range does not cover rho_0)
+  T = 195:  26 c values in [0.24, 0.49], rho_0 at the edges 2.8e-02, peak at 0.72 of the range -> skipped (range does not cover rho_0)
+  T = 200:  21 c values in [0.29, 0.49], rho_0 at the edges 4.2e-02, peak at 0.85 of the range -> skipped (range does not cover rho_0)
+  T = 205:  13 c values in [0.37, 0.49], rho_0 at the edges 0.0e+00, peak at 0.92 of the range -> skipped (range does not cover rho_0)
+  T = 210:  13 c values in [0.37, 0.49], rho_0 at the edges 0.0e+00, peak at 1.00 of the range -> skipped (range does not cover rho_0)
+  T = 220:   6 c values -> skipped (too few points)
+
+running lee_yang.py for T = [120, 125, 130, 135, 140, 145, 150, 155, 160, 180] (4 at a time)
+  T = 120: done
+  T = 125: done
+  T = 130: done
+  T = 135: done
+  T = 140: done
+  T = 145: done
+  T = 150: done
+  T = 155: done
+  T = 160: done
+  T = 180: done
+
+LY-zero candidate (stable zero with the smallest Im mu near the smallest |mu|), mu_B in MeV:
+   T    Nmax   Re mu_B          Im mu_B          |mu_B/T|  Im mu_B/T  dN_max[MeV]  stable zeros
+  120   8      359 +-   72      952 +-   70    8.482    7.94       41        2
+  120   6     no stable zero
+  125   8     no stable zero
+  125   6     no stable zero
+  130   8      599 +-   12      223 +-   12    4.917    1.71       72        8
+  130   6      670 +-    8      239 +-   14    5.470    1.84       30        4
+  135   8      565 +-   10      308 +-   23    4.766    2.28       77        9
+  135   6     no stable zero
+  140   8      539 +-   14      337 +-   14    4.544    2.41       37        4
+  140   6      571 +-   12      317 +-   15    4.663    2.26       37        5
+  145   8      460 +-   12      368 +-   18    4.063    2.54       84        6
+  145   6      520 +-   31      426 +-   20    4.637    2.94       26        4
+  150   8      484 +-   12      428 +-   14    4.311    2.86        5        1
+  150   6      483 +-   12      423 +-   14    4.281    2.82        5        2
+  155   8      397 +-    7      463 +-   14    3.935    2.99        1        10
+  155   6      398 +-    8      463 +-   14    3.936    2.98        1        10
+  160   8      969 +-   82      230 +-   16    6.228    1.44       88        8
+  160   6     no stable zero
+  180   8     no stable zero
+  180   6     no stable zero
+
+Yang-Lee edge extrapolation  Im mu_LY = A (T - Tc)^1.5645 :
+  N_max = 8: Tc = -27 +- 30 MeV  (chi2/dof = 306.6/6),  Re mu_B(Tc) = 1757 +- 238 MeV;  dropping lowest / highest T: Tc = 13 / 76 MeV
+  N_max = 6: Tc = 83 +- 5 MeV  (chi2/dof = 7.6/3),  Re mu_B(Tc) = 1176 +- 61 MeV;  dropping lowest / highest T: Tc = 78 / 87 MeV
+  truncation systematic (N_max 8 vs 6): dTc = 110 MeV, d Re mu_B = 581 MeV
+/Users/adc6103/Desktop/Lattice_QCD/Code/DoS/Playing_around/ly_tscan.py:171: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+exit 0

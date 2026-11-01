@@ -1,0 +1,32 @@
+data: /Users/adc6103/Desktop/Lattice_QCD/Code/DoS/Playing_around/raw/120  (100 c values from -0.26 to 1)
+fit variants: range, degree offset, degrees, AIC - AIC_min, weight
+       [-0.26, 1] -1  dlogrho:5 B2:9 B4:9 B6:7 B8:5  AIC =  104.09  w = 0.000
+       [-0.26, 1] +0  dlogrho:6 B2:10 B4:10 B6:8 B8:6  AIC =    0.00  w = 0.726
+       [-0.26, 1] +1  dlogrho:7 B2:11 B4:11 B6:9 B8:7  AIC =    2.00  w = 0.267
+       [-0.26, 1] +2  dlogrho:8 B2:12 B4:12 B6:10 B8:8  AIC =    9.74  w = 0.006
+       [-0.26, 1] +3  dlogrho:9 B2:13 B4:13 B6:11 B8:9  AIC =   13.76  w = 0.001
+     [-0.2, 0.94] -1  dlogrho:5 B2:7 B4:5 B6:5 B8:2  AIC =  105.98  w = 0.000
+     [-0.2, 0.94] +0  dlogrho:6 B2:8 B4:6 B6:6 B8:3  AIC =   25.54  w = 0.000
+     [-0.2, 0.94] +1  dlogrho:7 B2:9 B4:7 B6:7 B8:4  AIC =   29.19  w = 0.000
+     [-0.2, 0.94] +2  dlogrho:8 B2:10 B4:8 B6:8 B8:5  AIC =   35.47  w = 0.000
+     [-0.2, 0.94] +3  dlogrho:9 B2:11 B4:9 B6:9 B8:6  AIC =   38.07  w = 0.000
+scheme: fugacity; zero search on the central fit of variant [-0.26, 1] +0 (weight 0.726)
+2 sectors (matched at N_max = 8): 17293 grid cells with non-zero winding number (only the 2500 closest to the origin refined), 29 distinct zeros after Newton refinement
+1 sector (matched at N_max = 8): 1740 grid cells with non-zero winding number, 11 distinct zeros after Newton refinement
+
+2 sectors (matched at N_max = 8): 29 zeros in the box, 3 candidates checked, 26 artifacts (|mu| from 3.43 to 4.60; failed checks: edge 16, N_max-dependence 15, isolation 26)
+  candidates (mu = mu_B/T; central +- stat +- sys; T = 120 MeV for the MeV values)
+     Re mu                      Im mu                      |mu|   mu_B [MeV]       d_other  isol   edge     d_grid   wind  weight  outliers  stable
+     3.915 +- 0.002 +- 0.001    2.169 +- 0.001 +- 0.001   4.475  ( 470 +  260i)    0.530   0.88  2.4e-28  inf    1   0.727   30/96    no
+     3.949 +- 0.001 +- 0.000    2.179 +- 0.001 +- 0.000   4.510  ( 474 +  262i)    0.495   0.90  3.6e-28  inf    1   1.000    2/432   no
+     3.955 +- 0.001 +- 0.000    2.181 +- 0.000 +- 0.000   4.517  ( 475 +  262i)    0.488   0.91  3.7e-28  inf    1   1.000   12/432   no
+  no stable zero in the search box
+
+1 sector (matched at N_max = 8): 11 zeros in the box, 1 candidates checked, 10 artifacts (|mu| from 5.00 to 6.15; failed checks: edge 5, N_max-dependence 8, isolation 10)
+  candidates (mu = mu_B/T; central +- stat +- sys; T = 120 MeV for the MeV values)
+     Re mu                      Im mu                      |mu|   mu_B [MeV]       d_other  isol   edge     d_grid   wind  weight  outliers  stable
+     4.280 +- 0.009 +- 0.000    0.297 +- 0.015 +- 0.000   4.290  ( 514 +   36i)    0.368   1.91  1.9e-41  5.1e-06    1   0.726    0/48    yes
+  smallest Im mu among stable zeros with |mu| <= 1.5 min|mu| (LY-zero candidate):
+     mu_B/T = (4.280 +- 0.009) + (0.297 +- 0.015) i,  |mu_B/T| = 4.290,  mu_B = (514 + 36 i) MeV
+  smallest |mu| (radius of convergence of the Taylor series):
+     mu_B/T = (4.280 +- 0.009) + (0.297 +- 0.015) i,  |mu_B/T| = 4.290,  mu_B = (514 + 36 i) MeV

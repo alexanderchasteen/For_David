@@ -1,0 +1,67 @@
+inner expansion scheme: fugacity; truncations compared: 2 sectors and 1 sector; output in tscan_fugacity/
+data sets:
+  T = 100:   4 c values -> skipped (too few points)
+  T = 105:   4 c values -> skipped (too few points)
+  T = 110:  72 c values in [-0.01, 0.94], rho_0 at the edges 5.8e-01, peak at 0.03 of the range -> skipped (range does not cover rho_0)
+  T = 115:  69 c values in [-0.025, 0.94], rho_0 at the edges 3.3e-01, peak at 0.05 of the range -> skipped (range does not cover rho_0)
+  T = 120: 100 c values in [-0.26, 1], rho_0 at the edges 7.2e-16, peak at 0.23 of the range -> run
+  T = 125:  81 c values in [-0.26, 1], rho_0 at the edges 1.3e-14, peak at 0.24 of the range -> run
+  T = 130:  89 c values in [-0.28, 1], rho_0 at the edges 1.1e-15, peak at 0.26 of the range -> run
+  T = 135:  87 c values in [-0.26, 1], rho_0 at the edges 9.6e-13, peak at 0.25 of the range -> run
+  T = 140:  78 c values in [-0.26, 1], rho_0 at the edges 4.6e-12, peak at 0.27 of the range -> run
+  T = 145:  72 c values in [-0.26, 1], rho_0 at the edges 1.6e-11, peak at 0.28 of the range -> run
+  T = 150:  72 c values in [-0.26, 1], rho_0 at the edges 4.0e-11, peak at 0.29 of the range -> run
+  T = 155:  72 c values in [-0.26, 1], rho_0 at the edges 8.2e-11, peak at 0.31 of the range -> run
+  T = 160:  74 c values in [-0.26, 1], rho_0 at the edges 1.2e-10, peak at 0.33 of the range -> run
+  T = 165:   9 c values -> skipped (too few points)
+  T = 170:   7 c values -> skipped (too few points)
+  T = 175:  10 c values -> skipped (too few points)
+  T = 180: 108 c values in [-0.3, 0.8], rho_0 at the edges 7.8e-08, peak at 0.55 of the range -> run
+  T = 185:   6 c values -> skipped (too few points)
+  T = 190:  28 c values in [0.22, 0.49], rho_0 at the edges 1.9e-02, peak at 0.59 of the range -> skipped (range does not cover rho_0)
+  T = 195:  26 c values in [0.24, 0.49], rho_0 at the edges 2.8e-02, peak at 0.72 of the range -> skipped (range does not cover rho_0)
+  T = 200:  21 c values in [0.29, 0.49], rho_0 at the edges 4.2e-02, peak at 0.85 of the range -> skipped (range does not cover rho_0)
+  T = 205:  13 c values in [0.37, 0.49], rho_0 at the edges 0.0e+00, peak at 0.92 of the range -> skipped (range does not cover rho_0)
+  T = 210:  13 c values in [0.37, 0.49], rho_0 at the edges 0.0e+00, peak at 1.00 of the range -> skipped (range does not cover rho_0)
+  T = 220:   6 c values -> skipped (too few points)
+
+running lee_yang.py for T = [120, 125, 130, 135, 140, 145, 150, 155, 160, 180] (4 at a time)
+  T = 120: done
+  T = 125: done
+  T = 130: done
+  T = 135: done
+  T = 140: done
+  T = 145: done
+  T = 150: done
+  T = 155: done
+  T = 160: done
+  T = 180: done
+
+LY-zero candidate (stable zero with the smallest Im mu near the smallest |mu|), mu_B in MeV:
+   T  sectors  Re mu_B          Im mu_B          |mu_B/T|  Im mu_B/T  d_other[MeV]  stable zeros
+  120        2  no stable zero
+  120        1     514 +-    1       36 +-    2    4.290    0.30       44         1
+  125        2  no stable zero
+  125        1  no stable zero
+  130        2  no stable zero
+  130        1  no stable zero
+  135        2  no stable zero
+  135        1     485 +-    2       77 +-    3    3.641    0.57       45         1
+  140        2  no stable zero
+  140        1  no stable zero
+  145        2  no stable zero
+  145        1  no stable zero
+  150        2  no stable zero
+  150        1  no stable zero
+  155        2  no stable zero
+  155        1  no stable zero
+  160        2  no stable zero
+  160        1  no stable zero
+  180        2     420 +-   15      392 +-    5    3.192    2.18        3         7
+  180        1     469 +-    7      342 +-    1    3.226    1.90       11         4
+
+Yang-Lee edge extrapolation  Im mu_LY = A (T - Tc)^1.5645 , using T = [180] (both truncations have a candidate, closer than 100 MeV):
+  2 sectors: fewer than 3 usable temperatures, no fit
+  1 sector: fewer than 3 usable temperatures, no fit
+/Users/adc6103/Desktop/Lattice_QCD/Code/DoS/Playing_around/ly_tscan.py:202: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()

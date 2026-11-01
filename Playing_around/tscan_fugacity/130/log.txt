@@ -1,0 +1,21 @@
+data: /Users/adc6103/Desktop/Lattice_QCD/Code/DoS/Playing_around/raw/130  (89 c values from -0.28 to 1)
+fit variants: range, degree offset, degrees, AIC - AIC_min, weight
+       [-0.28, 1] -1  dlogrho:7 B2:6 B4:7 B6:8 B8:8  AIC =   82.42  w = 0.000
+       [-0.28, 1] +0  dlogrho:8 B2:7 B4:8 B6:9 B8:9  AIC =    0.00  w = 0.865
+       [-0.28, 1] +1  dlogrho:9 B2:8 B4:9 B6:10 B8:10  AIC =    3.77  w = 0.131
+       [-0.28, 1] +2  dlogrho:10 B2:9 B4:10 B6:11 B8:11  AIC =   10.90  w = 0.004
+       [-0.28, 1] +3  dlogrho:11 B2:10 B4:11 B6:12 B8:12  AIC =   15.31  w = 0.000
+    [-0.22, 0.94] -1  dlogrho:7 B2:9 B4:8 B6:6 B8:6  AIC =   39.06  w = 0.000
+    [-0.22, 0.94] +0  dlogrho:8 B2:10 B4:9 B6:7 B8:7  AIC =   23.70  w = 0.000
+    [-0.22, 0.94] +1  dlogrho:9 B2:11 B4:10 B6:8 B8:8  AIC =   28.71  w = 0.000
+    [-0.22, 0.94] +2  dlogrho:10 B2:12 B4:11 B6:9 B8:9  AIC =   34.97  w = 0.000
+    [-0.22, 0.94] +3  dlogrho:11 B2:13 B4:12 B6:10 B8:10  AIC =   41.18  w = 0.000
+scheme: fugacity; zero search on the central fit of variant [-0.28, 1] +0 (weight 0.865)
+2 sectors (matched at N_max = 8): 18088 grid cells with non-zero winding number (only the 2500 closest to the origin refined), 29 distinct zeros after Newton refinement
+1 sector (matched at N_max = 8): 2217 grid cells with non-zero winding number, 9 distinct zeros after Newton refinement
+
+2 sectors (matched at N_max = 8): 29 zeros in the box, 0 candidates checked, 29 artifacts (|mu| from 3.31 to 4.46; failed checks: edge 22, N_max-dependence 29, isolation 29)
+  no stable zero in the search box
+
+1 sector (matched at N_max = 8): 9 zeros in the box, 0 candidates checked, 9 artifacts (|mu| from 4.70 to 5.97; failed checks: edge 6, N_max-dependence 9, isolation 9)
+  no stable zero in the search box
